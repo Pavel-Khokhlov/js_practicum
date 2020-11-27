@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS-practicum</title>
-  <link rel="stylesheet" href="./index.css" class="sr">
+  <link rel="stylesheet" href="./index.css">
   <script src="./index.js" defer></script>
 </head>
 
@@ -20,19 +20,16 @@
       Напишите функцию `palindrome(str)`, принимающую как аргумент строку. Функция должна вернуть `true`, если строка — палиндром, и `false`, если нет.
       
       Считайте, что на вход всегда передаётся слово: то есть знаков препинания и пробелов в аргументе быть не может.
-      
       ```
       palindrome('топот'); // true
       palindrome('Saippuakivikauppias'); // true
       palindrome('привет'); // false
-
       ```
       **Бонус.** Задача для любознательных. Пусть функция принимает на вход любую строку, но пробелы и знаки препинания не учитывает.
       
-      ```
       palindrome('О, лета тело!'); // true
       ```</pre>
-    <input type="text" class="input_task-one" placeholder="Строка">
+    <input type="text" class="input_task-one" placeholder="Введите слово">
     <button type="button" class="button button_task-one">Проверить</button>
   </section>
 
@@ -59,9 +56,9 @@
       reverseWords('всегда много путей достичь цель есть'); // "есть цель достичь путей много всегда"
       reverseWords('испробовать их все должны вы'); // "вы должны все их испробовать"
       ```</pre>
-      <input type="text" class="input_task-three" placeholder="Напишите слова через пробел">
-      <button type="button" class="button button_task-three">Проверить</button>
-      <p class="paragraph-three"></p>
+    <input type="text" class="input_task-three" placeholder="Напишите слова через пробел">
+    <button type="button" class="button button_task-three">Проверить</button>
+    <p class="paragraph-three"></p>
   </section>
 
   <!-- TASK FOUR -->
@@ -72,9 +69,18 @@
       ```
       capitalize('молодость всё простит'); // "Молодость Всё Простит"
       ```</pre>
-      <input type="text" class="input_task-four" placeholder="Напишите слова через пробел">
-      <button type="button" class="button button_task-four">Проверить</button>
-      <p class="paragraph-four"></p>
+    <input type="text" class="input_task-four" placeholder="Напишите слова через пробел">
+    <button type="button" class="button button_task-four">Проверить</button>
+    <p class="paragraph-four"></p>
+  </section>
+
+  <!-- TASK FIVE -->
+  <section class="task-five">
+    <h2 class="title">Задача 5: «Найти гласные»</h2>
+    <pre class="paragraph">
+      Напишите функцию `findVowels(str)`, принимающую на вход кириллическую строку `str` и возвращающую количество гласных, содержащихся в этой строке. Для вашего удобства вот массив кириллических гласных: `['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е']`.</pre>
+    <input type="text" class="input_task-five" placeholder="Введите слово">
+    <button type="button" class="button button_task-five">Проверить</button>
   </section>
 </body>
 

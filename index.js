@@ -72,10 +72,36 @@ const answerFour = document.querySelector(".paragraph-four");
 
 const capitalize = () => {
   const string = inputTaskFour.value;
-  const newString = string.split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ');
+  const newString = string
+    .split(" ")
+    .map((word) => word[0].toUpperCase() + word.substring(1))
+    .join(" ");
   answerFour.textContent = newString;
 };
 
 buttonTaskFour.addEventListener("click", capitalize);
+
+// TASK FIVE
+
+const buttonTaskFive = document.querySelector(".button_task-five");
+const inputTaskFive = document.querySelector(".input_task-five");
+
+const findVowels = () => {
+  const word = inputTaskFive.value;
+  const wordArr = word.split(``);
+  let countVowels = 0;
+  const vowelsArr = ["а", "я", "о", "ё", "у", "ю", "ы", "и", "э", "е"];
+  wordArr.map((item) => {
+    for (let i = 0; i < vowelsArr.length; ++i) {
+      if (item === vowelsArr[i]) {
+        countVowels = countVowels + 1;
+      }
+    }
+  });
+
+  alert(countVowels);
+};
+
+buttonTaskFive.addEventListener("click", findVowels);
 
 
