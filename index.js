@@ -1,4 +1,4 @@
-// PALINDROM
+// TASK ONE PALINDROM
 
 const buttonTaskOne = document.querySelector(".button_task-one");
 const inputTaskOne = document.querySelector(".input_task-one");
@@ -18,7 +18,7 @@ const palindrom = () => {
 
 buttonTaskOne.addEventListener("click", palindrom);
 
-// FIZZBUZZ
+// TASK TWO FIZZBUZZ
 
 const buttonTaskTwo = document.querySelector(".button_task-two");
 const inputTaskTwo = document.querySelector(".input_task-two");
@@ -50,7 +50,7 @@ const fizzBuzz = () => {
 
 buttonTaskTwo.addEventListener("click", fizzBuzz);
 
-// TASK THREE
+// TASK THREE reverseWords
 
 const buttonTaskThree = document.querySelector(".button_task-three");
 const inputTaskThree = document.querySelector(".input_task-three");
@@ -64,7 +64,7 @@ const reverseWords = () => {
 
 buttonTaskThree.addEventListener("click", reverseWords);
 
-// TASK FOUR
+// TASK FOUR capitalize
 
 const buttonTaskFour = document.querySelector(".button_task-four");
 const inputTaskFour = document.querySelector(".input_task-four");
@@ -81,7 +81,7 @@ const capitalize = () => {
 
 buttonTaskFour.addEventListener("click", capitalize);
 
-// TASK FIVE
+// TASK FIVE findVowels
 
 const buttonTaskFive = document.querySelector(".button_task-five");
 const inputTaskFive = document.querySelector(".input_task-five");
@@ -104,4 +104,19 @@ const findVowels = () => {
 
 buttonTaskFive.addEventListener("click", findVowels);
 
+// TASK SIX uniqNumber
 
+const buttonTaskSix = document.querySelector(".button_task-six");
+const inputTaskSix = document.querySelector(".input_task-six");
+
+const uniqNumber = () => {
+  const strNumbers = inputTaskSix.value;
+  const numbersArr = strNumbers.split(``);
+  alert(
+    numbersArr
+      .map((item) => item)
+      .filter((value, index, self) => self.indexOf(value) === index)
+  );
+};
+
+buttonTaskSix.addEventListener("click", uniqNumber);
