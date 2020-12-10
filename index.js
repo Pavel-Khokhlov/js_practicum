@@ -115,8 +115,48 @@ const uniqNumber = () => {
   alert(
     numbersArr
       .map((item) => item)
-      .filter((value, index, self) => self.indexOf(value) === index)
+      .filter((value, index, arr) => arr.indexOf(value) === index)
   );
 };
 
 buttonTaskSix.addEventListener("click", uniqNumber);
+
+// TASK SEVEN ANAGRAMM
+
+const buttonTaskSeven = document.querySelector(".button_task-seven");
+const inputStrOne = document.querySelector(".input_task-seven_one");
+const inputStrTwo = document.querySelector(".input_task-seven_two");
+
+const anagramm = () => {
+  const arrOne = inputStrOne.value
+    .toLowerCase()
+    .replace(/[\s.,%!?#]*/g, "")
+    .split("");
+  const arrTwo = inputStrTwo.value
+    .toLowerCase()
+    .replace(/[\s.,%!?#]*/g, "")
+    .split("");
+  console.log(arrOne, arrTwo);
+  alert(
+    arrOne.map((item) => {
+      arrTwo.includes(item);
+    })
+  );
+};
+
+buttonTaskSeven.addEventListener("click", anagramm);
+
+// TASK EIGHT FIBONACHI
+
+//const buttonTaskEight = document.querySelector(".//button_task-eight");
+//const inputTaskEight = document.querySelector(".input_task-eight");
+//
+//const fibonachi = () => {
+//  const number = inputTaskEight.value;
+//  const fibArr = [0];
+//  alert(
+//    for(let i = 0; i < number; )
+//  );
+//};
+//
+//buttonTaskEight.addEventListener("click", fibonachi);
